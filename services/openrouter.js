@@ -4,7 +4,7 @@ export async function askLLM(message) {
   const response = await axios.post(
     "https://openrouter.ai/api/v1/chat/completions",
     {
-      model: "mistralai/mixtral-8x7b",
+      model: "openchat/openchat-3.5",
       messages: [{ role: "user", content: message }],
     },
     {
